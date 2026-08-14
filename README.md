@@ -80,7 +80,17 @@ Ensure the wrapper script runs successfully in stdio mode:
 *(The command should stay active, listening for JSON-RPC messages on standard input).*
 
 ### 2. Setup with Claude Desktop
-To integrate this tool with **Claude Desktop**, open your desktop configuration file (on Linux it is located at `~/.config/Claude/claude_desktop_config.json`) and append the following block to your `mcpServers` object:
+To integrate this tool with **Claude Desktop**, you can configure it either automatically or manually:
+
+#### Option A: Automatic Configuration (Quickest)
+Run the following command in your terminal. This will automatically create the directory and write the configuration file pointing to your current folder path:
+```bash
+mkdir -p ~/.config/Claude && echo "{\"mcpServers\":{\"local-notes-search\":{\"command\":\"$(pwd)/mcp_wrapper.sh\"}}}" > ~/.config/Claude/claude_desktop_config.json
+```
+*(Note: This creates a new configuration file. If you already have existing MCP servers configured, use Option B instead to avoid overwriting them).*
+
+#### Option B: Manual Configuration
+Open your desktop configuration file (located at `~/.config/Claude/claude_desktop_config.json` on Linux) and add the following server entry to the `mcpServers` block:
 
 ```json
 {
@@ -91,6 +101,7 @@ To integrate this tool with **Claude Desktop**, open your desktop configuration 
   }
 }
 ```
+*(Be sure to replace the path with your actual absolute path if you clone the repository elsewhere).*
 
 Restart Claude Desktop, and the **Local Notes Search** tool (`search_local_notes`) will be available. Claude will automatically query this tool when you ask it questions about your indexed documents.
 
