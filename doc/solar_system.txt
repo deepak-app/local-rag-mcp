@@ -1,0 +1,8 @@
+The Solar System consists of the Sun and the objects that orbit it. 
+Among these objects are the eight planets, their moons, and smaller bodies such as asteroids, comets, and meteoroids.
+The four inner planets, also known as terrestrial planets, are Mercury, Venus, Earth, and Mars. They are composed primarily of rock and metal.
+The four outer planets are giant planets, substantially larger than the terrestrials. 
+Jupiter and Saturn are gas giants, composed mainly of hydrogen and helium. Uranus and Neptune are ice giants, containing mostly substances with higher melting points than hydrogen and helium, called volatiles, such as water, ammonia, and methane.
+All eight planets have almost circular orbits that lie within a nearly flat disc called the ecliptic plane.
+The Sun is a yellow dwarf star. It contains 99.86% of all the known mass in the Solar System and exerts a massive gravitational pull.
+This gravity keeps all the planets and other celestial bodies in their respective orbits.
